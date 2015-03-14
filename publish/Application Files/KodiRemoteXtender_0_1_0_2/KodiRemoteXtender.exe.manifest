@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="KodiRemoteXtender.exe" version="0.1.0.2" publicKeyToken="68fe41a3bbbe9e50" language="en" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="KodiRemoteXtender" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="KodiRemoteXtender.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FiddlerCore.dll" size="364032">
+      <assemblyIdentity name="FiddlerCore" version="2.4.8.4" publicKeyToken="67CB91587178AC5A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>hFmeiNA82g845A0Sq3o4xOrRpKUUrba3gUs7rmgddpc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HtmlAgilityPack.dll" size="134656">
+      <assemblyIdentity name="HtmlAgilityPack" version="1.4.6.0" publicKeyToken="BD319B19EAF3B43A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>SNCuOK3YiOSpjj9lW2J2pWpoIxH5nTXmtn/DcqtdHeM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="KodiRemoteXtender.exe" size="379392">
+      <assemblyIdentity name="KodiRemoteXtender" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>jr8suGEjmmUZTPF3dP+Ju1W7n8HBP6YaPfej+2KmnhE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="KodiRemoteXtender.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=KONTOR-PC\Kenneth" issuerKeyHash="d10965afaae8f5082b5d86603c530e4ab97eca5c" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>qhvOP2HVSORuR0n39n7t0kIvqB6vO6zPG6NCVSVuEFk=</DigestValue></Reference></SignedInfo><SignatureValue>YFKZswcQ6yddaP3AJtiBfw2ww0gkVu42ajBz95oKHCHrW5pYIOREngZHV2v0wFnBhmoHGOXsRmxb4GgBi5+2GtiPU+75n8VSLSH8Pa8JpD0kSNygzWg+2tZwxsCcH4rXq9wT1KM/nbuOPFNZYqeR/9B38t0WPTBcxwi+ZBKDzY8=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>uaHDoBTAcFjHZ3sgVTQxurkW51hWMo2ZEjSOG0dHss+ElhPXhXVcTqw9bhAdxWBZesazxxRX4zdkQKRVMUccPxuFdLwnzQ3eGXLOchL8pLGNPJ8AYqf6Ibhj1XxytSjPzub3Jsh3tAlnuCsum8D67A+OjDNPNUlzl8eZlWG1MQ0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="59106e255542a31bcfac3baf1ea82f42d2ed7ef6f749476ee448d5613fce1baa" Description="" Url=""><as:assemblyIdentity name="KodiRemoteXtender.exe" version="0.1.0.2" publicKeyToken="68fe41a3bbbe9e50" language="en" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=KONTOR-PC\Kenneth</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Lqi3ynOPX07ltWRvq34Qlny9+d3rtLhmcKXLFe/o/is=</DigestValue></Reference></SignedInfo><SignatureValue>MCu/c5uS+4Td8KOHzibrIIYsBYesif8LmX164njC8HnA2tO5GMVNQmjzi/Bg5u153q6sAwPQXKe+tuqOjexb9+wUDA3yhByOKncFuFAza49hSUCsdKKYJZmHm+1kGXWutGu8Dvh59SHeFzJcSwpVTAf+QP72TObK9feEJEHKRi4=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>uaHDoBTAcFjHZ3sgVTQxurkW51hWMo2ZEjSOG0dHss+ElhPXhXVcTqw9bhAdxWBZesazxxRX4zdkQKRVMUccPxuFdLwnzQ3eGXLOchL8pLGNPJ8AYqf6Ibhj1XxytSjPzub3Jsh3tAlnuCsum8D67A+OjDNPNUlzl8eZlWG1MQ0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB3TCCAUagAwIBAgIQLOHG5+Egxo5I6ProZKrg7jANBgkqhkiG9w0BAQsFADAtMSswKQYDVQQDHiIASwBPAE4AVABPAFIALQBQAEMAXABLAGUAbgBuAGUAdABoMB4XDTE0MDgyMzE0MTkyOVoXDTE1MDgyMzIwMTkyOVowLTErMCkGA1UEAx4iAEsATwBOAFQATwBSAC0AUABDAFwASwBlAG4AbgBlAHQAaDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAuaHDoBTAcFjHZ3sgVTQxurkW51hWMo2ZEjSOG0dHss+ElhPXhXVcTqw9bhAdxWBZesazxxRX4zdkQKRVMUccPxuFdLwnzQ3eGXLOchL8pLGNPJ8AYqf6Ibhj1XxytSjPzub3Jsh3tAlnuCsum8D67A+OjDNPNUlzl8eZlWG1MQ0CAwEAATANBgkqhkiG9w0BAQsFAAOBgQCGR/Mc58bwvvCRxxEfFA2j+NIbxfXXns4YBrVXjfxG1CH0IpfObHreGnWFkB57+RMkKm5aMkow2udMUxoCS/l697ACThYu8fEpShTbGUvAA6/+YphvQiPH+UJooCQyLWr2O0ChUSti/VPwpNCuUpACt2+4VpTYTleifRFiokHG7A==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
